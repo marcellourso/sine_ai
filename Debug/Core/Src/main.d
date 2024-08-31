@@ -25,18 +25,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
- ../X-CUBE-AI/App/app_x-cube-ai.h ../Middlewares/ST/AI/Inc/ai_platform.h \
- ../Middlewares/ST/AI/Inc/ai_datatypes.h \
- ../Middlewares/ST/AI/Inc/ai_platform.h \
- ../Middlewares/ST/AI/Inc/ai_platform_interface.h \
- ../Middlewares/ST/AI/Inc/datatypes_network.h \
- ../Middlewares/ST/AI/Inc/ai_datatypes_defines.h \
- ../Middlewares/ST/AI/Inc/core_assert.h \
- ../Middlewares/ST/AI/Inc/ai_datatypes_format.h \
- ../Middlewares/ST/AI/Inc/formats_list.h ../Middlewares/ST/AI/Inc/stai.h \
- ../X-CUBE-AI/App/sine_model.h ../X-CUBE-AI/App/sine_model_config.h \
- ../X-CUBE-AI/App/sine_model_data.h \
- ../X-CUBE-AI/App/sine_model_data_params.h
+ ../X-CUBE-AI/App/app_x-cube-ai.h ../Middlewares/ST/AI/Inc/ai_platform.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -66,16 +55,3 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
 ../X-CUBE-AI/App/app_x-cube-ai.h:
 ../Middlewares/ST/AI/Inc/ai_platform.h:
-../Middlewares/ST/AI/Inc/ai_datatypes.h:
-../Middlewares/ST/AI/Inc/ai_platform.h:
-../Middlewares/ST/AI/Inc/ai_platform_interface.h:
-../Middlewares/ST/AI/Inc/datatypes_network.h:
-../Middlewares/ST/AI/Inc/ai_datatypes_defines.h:
-../Middlewares/ST/AI/Inc/core_assert.h:
-../Middlewares/ST/AI/Inc/ai_datatypes_format.h:
-../Middlewares/ST/AI/Inc/formats_list.h:
-../Middlewares/ST/AI/Inc/stai.h:
-../X-CUBE-AI/App/sine_model.h:
-../X-CUBE-AI/App/sine_model_config.h:
-../X-CUBE-AI/App/sine_model_data.h:
-../X-CUBE-AI/App/sine_model_data_params.h:
