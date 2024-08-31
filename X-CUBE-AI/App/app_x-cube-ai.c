@@ -1,5 +1,6 @@
 #include "app_x-cube-ai.h"
 #include "main.h"
+#include "math.h"
 #include "ai_datatypes_defines.h"
 #include "sine_model.h"
 #include "sine_model_data.h"
@@ -21,6 +22,8 @@ static ai_buffer* ai_input;
 static ai_buffer* ai_output;
 
 extern UART_HandleTypeDef huart2;  // Usa huart2
+
+int angle=0;
 
 static void ai_log_err(const ai_error err, const char *fct)
 {
@@ -66,7 +69,7 @@ static int ai_run(void)
 
 int acquire_and_process_data(ai_i8* data[])
 {
-  static int angle = 0;
+  angle = 0;
   float radians = angle * (M_PI / 180.0);
   ((ai_float*)data[0])[0] = radians;
 
