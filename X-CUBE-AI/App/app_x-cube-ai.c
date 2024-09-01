@@ -69,7 +69,7 @@ static int ai_run(void)
 
 int acquire_and_process_data(ai_i8* data[])
 {
-  angle = 0;
+
   float radians = angle * (M_PI / 180.0);
   ((ai_float*)data[0])[0] = radians;
 
