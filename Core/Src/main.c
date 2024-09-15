@@ -28,8 +28,7 @@ int main(void)
   int buf_len = sprintf(buf, "\r\n\r\nSTM32 X-Cube-AI test\r\n");
   HAL_UART_Transmit(&huart2, (uint8_t *)buf, buf_len, 100);  // Usa huart2
 
-  while (1)
-  {
+  while (1) {
     MX_X_CUBE_AI_Process();  // Processa l'inferenza AI
   }
 }

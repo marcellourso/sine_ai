@@ -97,13 +97,20 @@ void MX_X_CUBE_AI_Process(void)
   int res = -1;
 
   if (sine_model) {
-    do {
+//    do {
       res = acquire_and_process_data(data_ins);  // Prepara i dati di input
       if (res == 0)
         res = ai_run();  // Esegue l'inferenza
       if (res == 0)
         res = post_process(data_outs);  // Elabora i risultati
-    } while (res == 0);
+
+      // Incrementa l'angolo per il prossimo ciclo
+          angle += 1;  // Incrementa di 30 gradi (o usa 0.1 rad per incrementi in radianti)
+          if (angle >= 360) {
+            angle = 0;  // Resetta l'angolo dopo 360 gradi
+          }
+
+//    } while (res == 0);
   }
 
   if (res) {
